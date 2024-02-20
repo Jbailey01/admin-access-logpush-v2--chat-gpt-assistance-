@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "21e30c47-dfd7-4073-bbe7-7134543c6522",
+		"name": "Cloudflare Audit Logs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31187325"
+	},
+	"item": [
+		{
+			"name": "Audit Logs Call 2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Auth-Key",
+						"value": "Redacted",
+						"type": "text"
+					},
+					{
+						"key": "X-Auth-Email",
+						"value": "itbilling@Redacted.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.cloudflare.com/client/v4/accounts/:{account_identifier}/audit_logs?since=2024-01-11T00:00:00Z",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cloudflare",
+						"com"
+					],
+					"path": [
+						"client",
+						"v4",
+						"accounts",
+						":{account_identifier}",
+						"audit_logs"
+					],
+					"query": [
+						{
+							"key": "since",
+							"value": "2024-01-11T00:00:00Z"
+						}
+					],
+					"variable": [
+						{
+							"key": "{account_identifier}",
+							"value": "Redacted"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

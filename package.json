@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "datadog-lambda-js": "^8.106.0",
+    "newman": "^6.1.1"
+  }
+}
